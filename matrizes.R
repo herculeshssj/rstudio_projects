@@ -52,5 +52,54 @@ matriz4
 ### Cálculo com matrizes ###
 ############################
 
+# Produto de um número por uma matriz
+produto <- 2 * matriz4
+produto
+
+# Soma e subtração de matrizes
+matriz5 <- matrix(c(1,5,15,8), nrow = 2, ncol = 2, byrow = TRUE)
+matriz5
+matriz6 <- matrix(c(2,4,6,10), nrow = 2, ncol=2, byrow = TRUE)
+matriz6
+
+soma <- matriz5 + matriz6
+soma
+
+subtracao <- matriz5 - matriz6
+subtracao
+
+# Para fazer a soma e subtração, as matrizes precisam ser do mesmo tamanho.
+
+
+# Multiplicação matricial
+produto_matriz <- matriz5 %*% matriz6
+produto_matriz
+
+
+# Média das linhas ou colunas
+media_coluna <- colMeans(matriz5)
+media_coluna
+
+media_linha <- rowMeans(matriz5)
+media_linha
+
+
+# Soma das linhas ou colunas
+soma_linha <- rowSums(matriz5)
+soma_linha
+
+soma_coluna <- colSums(matriz5)
+soma_coluna
+
+
+# Matriz com caracteres
+matriz7 <- matrix(c("Segunda", "Terça", "Quarta", "Quinta"), nrow = 2, ncol = 2, byrow = TRUE)
+matriz7
+
+
+
+
+
+
 
 
